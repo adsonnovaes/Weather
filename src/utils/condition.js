@@ -8,7 +8,7 @@ export function condition(condition) {
                 color: '#1ec9ff'
             };
             break;
-        case 'clear-day':
+        case 'clear_day':
             return icon = {
                 name: 'partly-sunny-outline',
                 color: '#FFB300'
