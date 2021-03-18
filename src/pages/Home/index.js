@@ -76,12 +76,13 @@ export default function Home(){
             <Conditions weather={weather}/>
 
             <FlatList 
-                horizontal={true}
-                contentContainerStyle={{ paddingBottom: '5%' }}
-                style={styles.list}
-                data={weather.results.forecast}
-                keyExtractor={ item => item.date }
-                renderItem={ ({item}) => <Forecast data={item}/> }
+              showsHorizontalScrollIndicator={false}
+              horizontal={true}
+              contentContainerStyle={{ paddingBottom: '5%' }}
+              style={styles.list}
+              data={weather.results.forecast}
+              keyExtractor={ item => item.date }
+              renderItem={ ({item}) => <Forecast data={item}/> }
             />
         </SafeAreaView>
     )
